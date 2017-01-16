@@ -1,0 +1,1 @@
+This cookbook wraps around the Puppet-Based web hosting setup and adds some pieces that would conflict with Chef, if Puppet would do it.
