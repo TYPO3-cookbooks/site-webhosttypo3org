@@ -32,6 +32,20 @@ Build status on our [CI server](https://chef-ci.typo3.org):
 - *develop* (next release): [![Build Status develop branch](https://chef-ci.typo3.org/job/TYPO3-cookbooks/job/site-webhosttypo3org/branch/develop/badge/icon)](https://chef-ci.typo3.org/job/TYPO3-cookbooks/job/site-webhosttypo3org/branch/develop/)
 
 
+Manual Steps
+------------
+
+- Copy the SSH private key from another web hosting server
+- Clone the Websites repo to `/root/puppet`:
+
+```
+# git clone ssh://service-website@review.typo3.org:29418/Teams/Server/Websites puppet
+# cd puppet
+# git submodule update --init
+```
+
+- Remaining details can be found in the `README.md` within the Websites repo.
+
 # License and Maintainer
 
 Maintainer:: Steffen Gebert (<steffen.gebert@typo3.org>)
