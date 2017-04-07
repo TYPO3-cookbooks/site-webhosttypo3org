@@ -8,4 +8,4 @@ include_recipe "t3-base"
 
 include_recipe "#{cookbook_name}::_logrotate"
 
-package "puppet ruby-rgen"
+package ["puppet", "ruby-rgen"]
