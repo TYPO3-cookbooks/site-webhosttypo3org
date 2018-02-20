@@ -8,4 +8,12 @@ include_recipe "t3-base"
 
 include_recipe "#{cookbook_name}::_logrotate"
 
-package ["puppet", "ruby-rgen"]
+packages = %w{
+	puppet
+	ruby-rgen
+
+}.each do |pkg|
+    package pkg do
+      action :install
+    end
+end
