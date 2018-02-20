@@ -11,6 +11,7 @@ include_recipe "#{cookbook_name}::_logrotate"
 packages = %w{
 	puppet
 	ruby-rgen
+	lzop
 
 }.each do |pkg|
     package pkg do
