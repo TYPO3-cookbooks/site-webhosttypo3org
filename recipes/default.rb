@@ -18,3 +18,6 @@ packages = %w{
       action :install
     end
 end
+
+# Zabbix checks
+include_recipe "zabbix-custom-checks::mysql" unless node['dev_mode']
